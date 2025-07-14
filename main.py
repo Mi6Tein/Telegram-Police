@@ -293,7 +293,8 @@ async def confirm_patrol(update: Update, context: CallbackContext) -> None:
 
 
 # Создание и настройка приложения
-application = Application.builder().token("8112479904:AAG-gQ5LhVt7REpzGGfVVnEToGOK8ffah88").build()
+token = '12344904:AAG-gQ5kDAd7REpzGGfWnADG8ffah66' # замените на свой токен бота
+application = Application.builder().token(token).build()
 
 # Добавляем обработчики
 application.add_handler(CommandHandler("add_intern", add_intern))
